@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo DetailsVC-->
+        <scene sceneID="Iw0-2C-hnf">
+            <objects>
+                <viewController storyboardIdentifier="PhotoDetailsVC" id="mpQ-Bj-m11" customClass="PhotoDetailsVC" customModule="InstaPhoto_BostaTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kzq-od-iQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKd-Qj-SgI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yeq-hv-wGm">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaE-70-ZDC">
+                                        <rect key="frame" x="368" y="15" width="30" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="Mh4-Td-1HV"/>
+                                            <constraint firstAttribute="width" constant="30" id="w5A-Ph-8cH"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QaE-70-ZDC" firstAttribute="top" secondItem="KKd-Qj-SgI" secondAttribute="top" constant="16" id="Fxc-EU-8J5"/>
+                                    <constraint firstAttribute="trailing" secondItem="QaE-70-ZDC" secondAttribute="trailing" constant="16" id="HEa-G5-CUc"/>
+                                    <constraint firstItem="yeq-hv-wGm" firstAttribute="width" secondItem="KKd-Qj-SgI" secondAttribute="width" id="OiG-cj-u1b"/>
+                                    <constraint firstItem="yeq-hv-wGm" firstAttribute="leading" secondItem="KKd-Qj-SgI" secondAttribute="leading" id="VAv-wH-nX8"/>
+                                    <constraint firstItem="yeq-hv-wGm" firstAttribute="top" secondItem="KKd-Qj-SgI" secondAttribute="top" id="WKT-9d-qhs"/>
+                                    <constraint firstAttribute="bottom" secondItem="yeq-hv-wGm" secondAttribute="bottom" id="jTe-c2-d2q"/>
+                                    <constraint firstItem="yeq-hv-wGm" firstAttribute="height" secondItem="KKd-Qj-SgI" secondAttribute="height" id="tgG-ro-Rky"/>
+                                    <constraint firstAttribute="trailing" secondItem="yeq-hv-wGm" secondAttribute="trailing" id="upw-zm-cc2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="579-Qo-eeO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KKd-Qj-SgI" firstAttribute="leading" secondItem="579-Qo-eeO" secondAttribute="leading" id="1ll-CF-voJ"/>
+                            <constraint firstItem="KKd-Qj-SgI" firstAttribute="top" secondItem="579-Qo-eeO" secondAttribute="top" id="B6i-K1-4Vw"/>
+                            <constraint firstItem="KKd-Qj-SgI" firstAttribute="trailing" secondItem="579-Qo-eeO" secondAttribute="trailing" id="CMw-HN-iPd"/>
+                            <constraint firstItem="KKd-Qj-SgI" firstAttribute="bottom" secondItem="579-Qo-eeO" secondAttribute="bottom" id="rwP-tT-fX0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="reb-kK-NK1"/>
+                    <connections>
+                        <outlet property="imageView" destination="yeq-hv-wGm" id="x9q-3P-q44"/>
+                        <outlet property="scrollView" destination="KKd-Qj-SgI" id="lwt-Av-JgK"/>
+                        <outlet property="shareButton" destination="QaE-70-ZDC" id="Blw-xx-ZXj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGS-B7-eqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2365.217391304348" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
