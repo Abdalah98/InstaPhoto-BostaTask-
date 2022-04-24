@@ -1,7 +1,7 @@
 # InstaPhoto-BostaTask-
 InstaPhot by MVVM Binding RxSift
 
-*  I Use the JSONPlaceholder API
+*  I Use the JSONPlaceholder API (https://jsonplaceholder.typicode.com/ )
 
       - Fetch user 
       - Fetch Albums by (userId as a parameter)
