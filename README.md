@@ -24,7 +24,9 @@ The app has several main features:
     •     Moya
     •     UiKit
     •     Support Dark Mode & light mode 
-    •     ARC, Memory Leaks
+    •     Memory Leaks
+    •     zooming Image 
+    •     Sharing image(UIActivityViewController)
     •     Downloading & Caching Image and data
     •     Asynchronous Data Fetch
     •     check the internet connection and refresh the app 
